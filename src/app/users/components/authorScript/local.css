@@ -1,0 +1,12 @@
+.popular-author-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.author-grid{
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

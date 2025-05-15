@@ -1,0 +1,32 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.search-results{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+.h2{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: black;
+}
+#input-for-search{
+    padding: 10px;
+    background-color: rgb(243, 216, 220);
+    width: 50vw;
+    border-radius: 10px 0 0 10px;
+}
+.search-button{
+    background-color: rgb(216, 158, 100);
+    padding: 10px;
+    border-radius: 0  10px 10px 0;
+    color: white;
+}

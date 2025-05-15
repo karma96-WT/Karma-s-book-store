@@ -1,0 +1,27 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.addbook-button{
+    border: none;
+    background-color: rgb(7, 147, 234);
+}
+.deletebooks-button{
+    background-color: red;
+}
+.addbook-button,.deletebooks-button{
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: x-large;
+    margin: 20px;
+    border-radius: 20px;
+    width: 30%;
+    text-align: center;
+}
+.welcome-admin-text{
+    font-size: xx-large;
+    color: rgb(11, 102, 199);
+}

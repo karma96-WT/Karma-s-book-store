@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    margin: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+.left-side{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right-side{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vision{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+    gap: 5rem;
+}
+.mission{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+    margin-top: 0;
+    gap: 5rem;
+}
+.vision .v-vision{
+    background-color: orange;
+    border: none;
+    border-radius: 30px;
+    width: 50%;
+    height: 20%;
+    font-size: 2rem;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+}
+.vision .v-mission{
+    background-color: white;
+    border: 2px solid orange;
+    border-radius: 30px;
+    width: 50%;
+    height: 20%;
+    font-size: 2rem;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.v-mission-after{
+    background-color: orange;
+    border: 2px solid orange;
+    color: white;
+    border-radius: 30px;
+    width: 50%;
+    height: 20%;
+    font-size: 2rem;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+#vision-paragraph{
+    padding:10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+#mission-paragraph{
+    padding:10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
