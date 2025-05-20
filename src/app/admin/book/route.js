@@ -1,15 +1,19 @@
 import prisma from '../../lib/prisma/prisma';
 
 export async function POST(req) {
-  const body = await req.json();
-  const { title, autor, price, image, genre } = body;
-
   try {
+    const body = await req.json();
+    const { title, author, price, image, genre } = body;
+
+    if (!title || !author || !price) {
+      throw new Error("Missing required fields");
+    }
+
     const [book, notification] = await prisma.$transaction([
       prisma.book.create({
         data: {
           title,
-          autor,
+          author,
           price: parseFloat(price),
           image,
           genre,
@@ -17,25 +21,22 @@ export async function POST(req) {
       }),
       prisma.notification.create({
         data: {
-          message: `New book titled "${title}" is available now. Go check and Happy Reading`,
-          createdAt: new Date(), // Ensure your Prisma schema has this field
+          message: `New book titled "${title}" is available now.`,
+          createdAt: new Date(),
         },
       }),
     ]);
-
-    console.log(book, notification);
 
     return new Response(JSON.stringify({ book, notification }), {
       status: 200,
       headers: { 'Content-Type': 'application/json' },
     });
+
   } catch (error) {
-    console.error('Failed to upload book and notification:', error);
-    return new Response(JSON.stringify({ error: 'Failed to create book or notification' }), {
+    console.error("API Error:", error);
+    return new Response(JSON.stringify({ error: error.message || "Server Error" }), {
       status: 500,
       headers: { 'Content-Type': 'application/json' },
     });
   }
 }
-
-export default prisma;
