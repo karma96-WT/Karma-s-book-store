@@ -1,0 +1,10 @@
+.p-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(16, 50, 163);
+}
+.space-y-2{
+    font-size: x-large;
+}

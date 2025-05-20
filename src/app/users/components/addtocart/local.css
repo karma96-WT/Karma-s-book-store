@@ -17,6 +17,8 @@
     padding: 10px;
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-evenly;
 }
 .total{
@@ -46,4 +48,10 @@
     background-color: rgb(20, 167, 193);
     cursor: pointer;
     color: white;
+}
+.cart-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }

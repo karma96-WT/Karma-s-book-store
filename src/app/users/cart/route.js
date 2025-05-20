@@ -15,8 +15,8 @@ export async function POST(req) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
-    const { bookid, title, author, price, genre } = await req.json();
-    if (!bookid || !title || !author || !price || !genre) {
+    const { image, bookid, title, author, price, genre } = await req.json();
+    if ( !image || !bookid || !title || !author || !price || !genre) {
       return NextResponse.json({ error: 'Missing book information' }, { status: 400 });
     }
 
@@ -30,6 +30,7 @@ export async function POST(req) {
         bookauthor: author,
         price: parseInt(price),
         bookgenre: genre,
+        image: image,
       },
     });
 

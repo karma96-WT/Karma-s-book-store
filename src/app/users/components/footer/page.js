@@ -35,7 +35,7 @@ export default function Footer(){
         <div><h4 id="cusomer-area">Customers area</h4></div>
         <div id="social-ML">
           <a href="/users/account">My Accont</a>
-          <a href="#">Tracking List </a>
+          <a href="/users/tracklist">Tracking List </a>
           <a href="/privacy-policy"> Privacy Policy </a>
           <a href="/users/FAQ"> FAQ </a>
           <a href="/users/components/addtocart"> My Cart </a>

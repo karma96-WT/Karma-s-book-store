@@ -20,6 +20,7 @@ export default async function AdminPage() {
       <Link href="/admin/addBooks" className="addbook-button">Add Books</Link>
       <Link href="/admin/deleteDashboard" className="deletebooks-button">Delete Books</Link>
       <Link href="/admin/deleteUsers" className="addbook-button">Manage Users</Link>
+      <Link href={'/admin/orders'} className='addbook-button'>Orders</Link>
     </div>
   );
 }

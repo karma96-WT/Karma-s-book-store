@@ -1,0 +1,21 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    border: 2px solid green;
+    border-radius: 20px;
+    padding: 10px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+}

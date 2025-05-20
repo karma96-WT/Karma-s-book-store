@@ -38,7 +38,8 @@ model book{
 }
 model cart {
   id          Int      @id @default(autoincrement())
-  userid    Int  @default(0)
+  image       String 
+  userid      Int  @default(0)
   useremail   String
   bookid      Int
   booktitle   String
@@ -48,5 +49,23 @@ model cart {
   quantity    Int      @default(1)       
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt        
+}
+
+model Order {
+  id              Int      @id @default(autoincrement())
+  name            String
+  email           String
+  phone           String
+  country         String
+  city            String
+  street          String
+  zip             String
+  cart            Json
+  createdAt       DateTime @default(now())
+}
+model Notification {
+  id        Int      @id @default(autoincrement())
+  message   String
+  createdAt DateTime @default(now())
 }
 

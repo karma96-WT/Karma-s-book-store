@@ -58,7 +58,7 @@ export default function Nar_bar() {
         <a className="a" href="/users/search">🔍</a>
       </div>
       <div className="NLS">
-        <a className="a" href="">
+        <a className="a" href="/users/notification">
           <img src="/image/icons8-notification.gif" alt="notification" id="notification" />
         </a>
         {session ? (

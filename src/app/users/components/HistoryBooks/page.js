@@ -53,6 +53,7 @@ export default function AdultBook() {
                     author: book.autor,
                     price: book.price,
                     genre: book.genre,
+                    image: book.image,
                   })
                 }
               >

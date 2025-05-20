@@ -52,6 +52,7 @@ export default function FictionBook() {
                     author: book.autor,
                     price: book.price,
                     genre: book.genre,
+                    image: book.image,
                   })
                 }
               >

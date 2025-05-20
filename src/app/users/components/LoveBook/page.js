@@ -48,11 +48,13 @@ export default function AdultBook() {
                 className="add-to-cart-button"
                 onClick={() =>
                   handleAddToCart({
+                    image: book.image,
                     bookid: book.id,
                     title: book.title,
                     author: book.autor,
                     price: book.price,
                     genre: book.genre,
+                    image: book.image,
                   })
                 }
               >

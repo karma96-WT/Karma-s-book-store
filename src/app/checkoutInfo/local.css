@@ -1,0 +1,110 @@
+/* Cart & Checkout shared container */
+.checkout-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #fefefe;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-grid input{
+    width: 100%;
+}
+
+.heading {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #218838;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding: 12px;
+  background: #f8f8f8;
+  border-radius: 10px;
+}
+
+.cart-item img {
+  border-radius: 8px;
+  margin-right: 16px;
+}
+
+.cart-item strong {
+  font-size: 16px;
+  display: block;
+}
+
+.remove-button, .pay-button {
+  background-color: #d9534f;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.remove-button:hover {
+  background-color: #c9302c;
+}
+
+.pay-button {
+  background-color: #28a745;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.pay-button:hover {
+  background-color: #218838;
+}
+
+.cart-total {
+  text-align: right;
+  margin-top: 12px;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* --- Checkout Form --- */
+
+.form-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.form-grid input {
+  padding: 10px 14px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.summary {
+  font-size: 16px;
+  text-align: right;
+  margin-bottom: 20px;
+}

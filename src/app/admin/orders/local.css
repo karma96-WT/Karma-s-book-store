@@ -1,0 +1,27 @@
+.orders-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.heading{
+    font-weight: bolder;
+    font-size: xx-large;
+    color: black;
+}
+.delivered{
+    margin: 0;
+    padding: 0;
+    width: 20px;
+}
+.border{
+    border: 2px solid black;
+}
+.mb-2{
+    color: black;
+}
+.total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
