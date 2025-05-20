@@ -38,16 +38,16 @@ const Page = () => {
                 <div>
                     {activeTab === 'vision' && (
                         <p id="vision-paragraph">
-                        "To create a warm, immersive, and inclusive space—both physical and
+                        To create a warm, immersive, and inclusive space—both physical and
                         digital where readers of all ages and backgrounds can explore,
-                        discover, and fall in love with the world of books."
+                        discover, and fall in love with the world of books.
                         </p>
                     )}
                     {activeTab === 'mission' && (
                         <p id="mission-paragraph">
-                        "To connect people with stories that inspire, educate, and empower by
+                        To connect people with stories that inspire, educate, and empower by
                         offering a diverse collection of books, fostering a culture of
-                        reading, and creating a welcoming space where curiosity thrives."
+                        reading, and creating a welcoming space where curiosity thrives.
                         </p>
                     )}
                     

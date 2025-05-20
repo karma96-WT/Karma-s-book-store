@@ -51,7 +51,7 @@ const ContactPage = () => {
         <div className="info-wrap">
           <h2 className="info-title">Say Hi to Us</h2>
           <h3 className="info-sub-title">
-            We'd love to hear from you!
+            We love to hear from you!
           </h3>
           <ul className="info-details">
             <li><span>Phone:</span><a href="tel:+975XXXXXXX">+975 XXXXXXXX</a></li>
