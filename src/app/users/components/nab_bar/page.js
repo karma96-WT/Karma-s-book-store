@@ -50,25 +50,25 @@ export default function Nar_bar() {
 
   return (
     <div className="nav-bar-container">
-      <a href=""><img src="/image/logo.png" alt="Logo" id="logo" /></a>
+      <Link href=""><img src="/image/logo.png" alt="Logo" id="logo" /></Link>
       <nav className="nav-bar">
-        <a className="a" href="/" id="Home-button">Home</a>
+        <Link className="a" href="/" id="Home-button">Home</Link>
       </nav>
       <div>
-        <a className="a" href="/users/search">🔍</a>
+        <Link className="a" href="/users/search">🔍</Link>
       </div>
       <div className="NLS">
-        <a className="a" href="/users/notification">
+        <Link className="a" href="/users/notification">
           <img src="/image/icons8-notification.gif" alt="notification" id="notification" />
-        </a>
+        </Link>
         {session ? (
             <>
               <LogoutButton />
             </>
           ) : (
             <>
-              <a className="a" href="/Login" id="Home-button">Login</a>
-              <a className="a" href="/Signup" id="Home-button">Signup</a>
+              <Link className="a" href="/Login" id="Home-button">Login</Link>
+              <Link className="a" href="/Signup" id="Home-button">Signup</Link>
             </>
           )}
 
@@ -80,10 +80,10 @@ export default function Nar_bar() {
             <UserButton />
         </SignedIn>*/}
 
-        <a href="/users/components/addtocart" id="cart-icon">
+        <Link href="/users/components/addtocart" id="cart-icon">
           <img src="/image/icons8-shopping-cart.gif" alt="" />
           <span id="num-of-books">{cartCount}</span>
-        </a>
+        </Link>
       </div>
     </div>
   );

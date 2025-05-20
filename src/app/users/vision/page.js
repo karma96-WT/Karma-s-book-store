@@ -2,7 +2,7 @@
 import React from 'react'
 import './local.css';
 import { useState } from 'react';
-const page = () => {
+const Page = () => {
     const [activeTab,setActiveTab] = useState('vision');
 
   return (
@@ -66,4 +66,4 @@ const page = () => {
   );
 }
 
-export default page
+export default Page
