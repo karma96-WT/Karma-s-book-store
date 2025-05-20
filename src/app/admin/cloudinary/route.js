@@ -1,6 +1,6 @@
 
 import formidable from 'formidable';
-import cloudinary from '@/app/lib/cloudinary.js';
+import cloudinary from '../../lib/cloudinary.js';
 
 export const config = {
   api: {
