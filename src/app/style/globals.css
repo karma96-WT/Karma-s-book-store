@@ -118,13 +118,13 @@ a{
       position: sticky;
       top: 0;
       left: 0;
-      display: block;
+      display: Block;
   }
 
   .nav-bar-container{
-      width: 50%;
+      width: 20%;
       height: fit-content;
-      display: none;
+      flex-direction: column;
       align-items: center;
       background-color: rgba(123, 158, 188, 0.594);
       position: sticky;
