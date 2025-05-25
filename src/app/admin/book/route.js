@@ -3,9 +3,9 @@ import prisma from '../../lib/prisma/prisma';
 export async function POST(req) {
   try {
     const body = await req.json();
-    const { title, author, price, image, genre } = body;
+    const { title, autor, price, image, genre } = body;
 
-    if (!title || !author || !price) {
+    if (!title || !autor || !price) {
       throw new Error("Missing required fields");
     }
 
@@ -13,7 +13,7 @@ export async function POST(req) {
       prisma.book.create({
         data: {
           title,
-          author,
+          autor,
           price: parseFloat(price),
           image,
           genre,
