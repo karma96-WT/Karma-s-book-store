@@ -37,7 +37,7 @@ export default function AdminPage() {
         <p className="text-gray-500 mb-6">List of all books are here:</p>
 
         {loading ? (
-          <p>Loading students...</p>
+          <p>Loading Books...</p>
         ) : (
           <ul className="space-y-4">
             {book.map((book) => (

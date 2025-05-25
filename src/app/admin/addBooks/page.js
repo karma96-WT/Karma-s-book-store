@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { CldUploadWidget } from 'next-cloudinary';
 import { useRouter } from 'next/navigation';
+import './local.css'
 
 export default function UploadPage() {
   const [imageUrl, setImageUrl] = useState(null); // Store the uploaded image URL
@@ -51,7 +52,7 @@ export default function UploadPage() {
             }}
           >
             {({ open }) => (
-              <button onClick={() => open()} type="button">
+              <button onClick={() => open()} type="button" className='upload-button'>
                 Upload an Image
               </button>
             )}
